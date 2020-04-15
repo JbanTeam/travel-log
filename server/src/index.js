@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('common'));
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CROS_ORIGIN,
+  origin: process.env.CORS_ORIGIN,
 }));
 
 app.get('/', (req, res) => {

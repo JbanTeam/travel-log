@@ -1,8 +1,59 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.popup {
+  max-width: 40vw;
+  padding: 1rem;
+}
+
+.popup img {
+  width: auto;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.mapboxgl-marker {
+  min-width: 50px;
+  z-index: 999;
+}
+
+.mapboxgl-popup {
+  z-index: 1000;
+}
+
+.marker {
+  transform: translate(-50%, -100%);
+}
+
+.marker.yellow path {
+  fill: rgb(235, 195, 64);
+}
+
+.marker.red path {
+  fill: rgb(245, 93, 56);
+}
+
+.entry-form label,
+.entry-form input,
+.entry-form textarea,
+.entry-form button {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.error {
+  color: rgb(245, 93, 56);
 }
